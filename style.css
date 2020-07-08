@@ -1,0 +1,43 @@
+body{
+  background-color: #000;
+  color:rgb(56, 248, 72);
+  overflow: hidden;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  
+  height:100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animation{
+ font-family: 'satisfy',sans-serif;
+ margin:0;
+ padding:0;
+ font-size: 5rem;   
+ background:url(text-bg.png) no-repeat ;
+ background-clip: text;
+ -webkit-background-clip: text; 
+ color:transparent;
+ animation:moveBg 90s linear infinite;
+ -webkit-animation:moveBg 90s linear infinite;
+}
+
+/*text bckgnd animation*/
+@keyframes moveBg{
+  0%{
+    background-position: 0% 30%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
+
